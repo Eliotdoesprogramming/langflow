@@ -12,7 +12,7 @@ Langfuse is an open-source tracing and analytics tool designed for LLM applicati
 2. Click on the "Sign Up" button and create an account.
 3. Once logged in, click on "Settings" and then on "Create new API keys."
 4. Copy the Public key and the Secret Key and save them somewhere safe.
-   {/* Add these keys to your environment variables in the following step. */}
+   {/_ Add these keys to your environment variables in the following step. _/}
 
 ### Step 2: Set up Langfuse in Langflow
 
@@ -28,7 +28,8 @@ Langfuse is an open-source tracing and analytics tool designed for LLM applicati
    Alternatively, you can run the Langflow CLI command:
 
    ```bash
-   LANGFLOW_LANGFUSE_SECRET_KEY=<your secret key> LANGFLOW_LANGFUSE_PUBLIC_KEY=<your public key> langflow
+   LANGFLOW_LANGFUSE_SECRET_KEY=<your secret key> LANGFLOW_LANGFUSE_PUBLIC_KEY=<your public key>
+   langflow run
    ```
 
    If you are self-hosting Langfuse, you can also set the environment variable `LANGFLOW_LANGFUSE_HOST` to point to your Langfuse instance. By default, Langfuse points to the cloud instance at `https://cloud.langfuse.com`.
